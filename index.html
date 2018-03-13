@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de_DE">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 Drag and Drop Example :: MM Newmedia</title>
+		<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<p>
+				MM<span>NEWMEDIA</span>
+			</p>
+			<p>
+				Agentur für neue Medien
+			</p>
+		</header>
+		<main>
+			<h1>Drag 'n Drop Upload Beispiel</h1>
+			<p>Hier seht ihr ein kleines Beispiel, wie man eine Drag and Drop Upload Funktion mit nativen Mitteln (HTML5, CSS3 und nativem Javascript) realisieren kann. Es wurde kein zusätzliches Javascript Framework (z.B. jQuery) eingesetzt.<br><a href="http://www.mm-newmedia.de/2016/11/freaky-friday-native-drag-n-drop/">Zurück zum Blog Artikel</a></p>
+			<p>Wähle eine Datei (jpg oder png Format) von Deinem Computer und ziehe sie in die unten dargestellte Fläche und lege sie dort ab.</p>
+			
+			<div class="mmn-upload-area">
+				
+				<!-- Fehlermeldungen -->
+				<div class="mmn-message-area"></div>
+				
+				<!-- Dropzone -->
+				<div class="mmn-dropzone">
+					Lege einfach eine Datei per Drag and Drop in diesem Feld ab
+				</div>
+				
+				<!-- Progress Bar -->
+				<div class="mmn-progress">
+					<div class="mmn-progress-bar" role="progressbar" style="width:0%">&nbsp;</div>
+					<span>0%</span>
+				</div>
+				
+				<!-- Bearbeitete Dateien -->
+				<template id="mmn-image-template">
+					<div class="mmn-thumbnail">
+						<img src="" alt="">
+						<span></span>
+					</div>
+				</template>
+        
+        <!-- Message Template -->
+				<template id="mmn-message-template">
+					<div class="mmn-message">
+						<strong></strong>
+					</div>
+				</template>
+				<div class="mmn-finish mmn-hidden">
+					<h3>Bearbeitete Dateien</h3>
+				</div>
+			</div>
+			<script src="./assets/js/functions.js"></script>
+		</main>
+	</body>
+</html>
