@@ -1,11 +1,11 @@
 var dropZone = document.querySelector('.mmn-dropzone'),
-		finishContainer = document.querySelector('.mmn-finish'),
-		formdata = new FormData(),
-		messageContainer = document.querySelector('.mmn-message-area'),
-		mimeTypes = [ 'image/jpeg', 'image/png', ],
-		progressBar = document.querySelector('.mmn-progress-bar'),
-		validFiles = [],
-		xhr = new XMLHttpRequest();
+    finishContainer = document.querySelector('.mmn-finish'),
+    formdata = new FormData(),
+    messageContainer = document.querySelector('.mmn-message-area'),
+    mimeTypes = [ 'image/jpeg', 'image/png', ],
+    progressBar = document.querySelector('.mmn-progress-bar'),
+    validFiles = [],
+    xhr = new XMLHttpRequest();
 
 var setImage = function(file) {
   var imageTemplate = document.getElementById('mmn-image-template'),
@@ -94,7 +94,7 @@ var startUpload = function(files) {
     }
   }
   
-  xhr.open('POST', '/upload.php');
+  xhr.open('POST', './upload.php');
   xhr.send(formdata);
 }
 			
